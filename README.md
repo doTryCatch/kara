@@ -29,6 +29,4 @@ This will open a pop-up with an input area where you can interact with Kara.
 ## Future Plans  
 
 This is just the initial version of Kara. In upcoming updates, Kara will become more dynamic, capable of handling tasks like researching, coding, managing other windows, and providing a better UI. Stay tuned! 🚀  
-```  
 
-This **keeps it structured, readable, and easy to follow** in Markdown format. Let me know if you need any tweaks! 🚀
