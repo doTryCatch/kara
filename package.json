@@ -1,20 +1,28 @@
 {
-  "name": "shri",
-  "version": "1.0.0",
-  "description": "**Welcome to shri world, my exciting personal assistant or moreover my bestie**",
-  "main": "index.js",
+  "name": "jarvis_ui",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix client/nextjs\" \"npm run electron --prefix client/nextjs\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^9.0.1",
-    "electron": "^32.1.2",
-    "electron-builder": "^25.0.5"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "electron": "electron ./electron/main.js",
+    "lint": "next lint"
   },
   "dependencies": {
-    "electron-serve": "^2.1.1"
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "electron": "^33.2.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

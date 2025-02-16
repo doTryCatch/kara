@@ -1,0 +1,5 @@
+{
+    "watch": ["main.js", "preload.js", "index.html", "renderer.js", "main.py"],
+    "exec": "electron .",
+    "ext": "js json html css"
+}
