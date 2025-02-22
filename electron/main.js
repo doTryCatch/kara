@@ -39,7 +39,7 @@ app.on("ready", () => {
   pythonProcess.stdout.on("data", (data) => {
     try {
       const response = data.toString();
-      console.log(`Received from Python: ${data}`);
+      // console.log(`Received from Python: ${data}`);
       win.webContents.send("fromPython", response);
     } catch (error) {
       console.error("Error parsing JSON from Python:", error);
@@ -50,7 +50,7 @@ app.on("ready", () => {
 
   // Handle messages from the renderer process
   ipcMain.on("toPython", (event, arg) => {
-    console.log(`Sending to Python: ${arg}`);
+    // console.log(`Sending to Python: ${arg}`);
     pythonProcess.stdin.write(`${arg}\n`);
   });
 });
