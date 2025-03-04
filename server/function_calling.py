@@ -19,7 +19,7 @@ class Kara:
         
         try:
             response = self.model.generate_content(
-                                                   f"History:{self.function_calling_context}, current Query:{user_input}" ,
+                                                   f"History:{self.function_calling_context}, current Query:{user_input} Instruction: Read the current query carefully if its sense is telling show the requirement fo calling function call then only go for it." ,
                 tools=[
                     {
                         "function_declarations": [
@@ -33,7 +33,6 @@ class Kara:
             if response and hasattr(response.candidates[0].content.parts[0], "function_call"):
                 function_call = response.candidates[0].content.parts[0].function_call
 
-                print(function_call)
                 args = function_call.args
                 function_name = function_call.name
 
