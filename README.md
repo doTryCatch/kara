@@ -6,7 +6,12 @@ Here’s your response in **Markdown format**:
 This project is a Next.js web application integrated with Electron to create a desktop AI assistant.  
 
 ## Getting Started  
-
+### 1. Move to directory and initiate required installation
+```bash
+cd <project dir>
+pip install -r requirement.txt
+npm install
+``` 
 ### 1. Start the Next.js Web App  
 Navigate to the project directory and run:  
 
